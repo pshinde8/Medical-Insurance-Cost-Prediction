@@ -4,9 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Medical Cost Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    
+
+<div class="container">
+    <div class="title">Medical Cost Prediction</div>
+    <form action="/sub" method="POST">
+        <div class="user-details">
+            <div class="input-box">
+                <span class="details">Age</span>
+                <input type="text"  placeholder="Age" name="age" id="age" required>
+            </div>
+            
+            <div class="input-box">
+                <span class="details">Gender</span>
+                <input type="text" placeholder="0 - Male / 1 - Female" name="gender" id="gender" required>
+            </div>
+
+            <div class="input-box">
+                <span class="details">BMI</span>
+                <input type="text" placeholder="BMI" name="bmi" id="bmi" required>
+            </div>
+
+            <div class="input-box">
+                <span class="details">Children</span>
+                <input type="text" placeholder="0 for None" name="children" id="children" required>
+            </div>
+
+            <div class="input-box">
+                <span class="details">Do you smoke?</span>
+                <input type="text" placeholder="1 - Yes / 0 - No" name="smoker" id="smoker" required>
+            </div>
+
+            <div class="input-box">
+                <span class="details">Region</span>
+                <input type="text" placeholder="0-NW/ 1-NE/ 2-SE/ 3-SW" name="region" id="region" required>
+            </div>
+
+            <button class="button">Predict</button>
+
+        </div>
+
+    </form>
+</div>
+
 </body>
 </html>

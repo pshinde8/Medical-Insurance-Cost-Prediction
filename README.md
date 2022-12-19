@@ -2,9 +2,6 @@
 
 This project aims to predict the insurance charge of a person given his information including- age, gender, bmi, number of childrens, smoker status and region using a machine learning algorithm (Random Forest Regression).
 
-## Link to Site
-Project is live at [Link](https://costs.herokuapp.com/)
-
 ## Home Page
 ![Home Page](images/home.png)
 
